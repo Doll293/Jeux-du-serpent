@@ -1,0 +1,30 @@
+name: C Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+      runs-on: ${{ matrix.os }}
+
+      strategy:
+        matrix:
+           os: [ubuntu-latest, windows-latest, macOS-latest]
+
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Installer GCC
+        if: matrix.os == 'ubuntu-latest'
+        run: sudo apt-get update -y && sudo apt-get install -y gcc
+
+      - name: Installer GCC
+        if: matrix.os == 'macOS-latest'
+        run: brew install gcc
+
+      - name: Installer GCC
+        if: matrix.os == 'windows-latest'
+        run: choco install mingw
+
+      - name: Build et Execute le code C
+        run: gcc -o snake snake.c && ./snake
