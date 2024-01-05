@@ -22,7 +22,7 @@ A simple C snake game for fun and learning!
 
 3. Compile the program:
     ```bash
-    gcc main.c -o snake
+    gcc snake.c -o snake
     ```
 
 4. Run the game:
