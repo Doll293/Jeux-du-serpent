@@ -18,8 +18,8 @@ void gotoxy(int x, int y){
 int main(){
     
     int x[1000], y[1000];
-    int food_x = rand() % COLS;
-    int food_y = rand() % ROWS;
+    int food_x = rand() % (COLS - 2) + 1;
+    int food_y = rand() % (ROWS - 2) + 1; 
     int length = 5;
     int score = 0;
     int direction = RIGHT;
@@ -99,8 +99,8 @@ int main(){
         if(x[0] == food_x && y[0] == food_y){
             length++;
             score += 10;
-            food_x = rand() % COLS - 2;
-            food_y = rand() % ROWS - 2;
+            food_x = rand() % (COLS - 2) + 1;
+            food_y = rand() % (ROWS - 2) + 1;
         }
 
         if(x[0] <= 0 || x[0] >= COLS || y[0] <= 0 || y[0] >= ROWS){

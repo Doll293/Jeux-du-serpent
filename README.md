@@ -38,28 +38,20 @@ No installation is necessary. Simply follow the steps above to try out the progr
 
 ## How to set up a coding environment for the project
 
-1. **Linux (Debian / Ubuntu):**
-
-   - Make sure you have GCC (GNU Compiler Collection) installed:
-     ```bash
-     sudo apt update
-     sudo apt install gcc
-     ```
-
-2. **Windows:**
+1. **Windows:**
 
    - Download and install [MinGW](http://www.mingw.org/), then make sure you add MinGW's `bin` directory to your `PATH` environment variable.
 
-3. **Mac:**
+2. **Mac:**
 
    - You can install GCC on a Mac using Xcode Command Line Tools. Open a terminal and run:
      ```bash
      xcode-select --install
      ```
 
-4. Use a text editor or integrated development environment (IDE) to code.
+3. Use a text editor or integrated development environment (IDE) to code.
 
-5. Open the project in your development environment and start coding!
+4. Open the project in your development environment and start coding!
 
 
 ## How to contribute to the project
