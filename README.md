@@ -2,7 +2,7 @@
 
 A simple C snake game for fun and learning!
 
-[![Build Status](https://travis-ci.org/Doll293/Jeux-du-serpent.svg?branch=master)](https://travis-ci.org/votre-utilisateur/snake-game-c)
+![GitHub Build](https://github.com/Doll293/Jeux-du-serpent/actions/workflows/C_build.yml/badge.svg)
 ![GitHub License](https://img.shields.io/github/license/Doll293/Jeux-du-serpent?color=red)
 ![GitHub issues](https://img.shields.io/github/issues/Doll293/Jeux-du-serpent)
 <br>
