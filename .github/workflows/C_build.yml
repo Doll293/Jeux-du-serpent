@@ -27,4 +27,4 @@ jobs:
         run: choco install mingw
 
       - name: Build et Execute le code C
-        run: gcc -o programme src/Programme.c && ./programme
+        run: gcc -o snake snake.c && ./snake
